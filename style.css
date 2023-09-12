@@ -62,10 +62,11 @@ body {
 .player-img{
     width: 200px;
     height: 200px;
+    object-fit: contain;
 }
 
 div {
-    border: 2px solid red;
+    
     position: relative;
 
 }
