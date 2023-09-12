@@ -15,41 +15,42 @@
         <div class="score-board">
             <div class="score-count">
                 <span>Player Score</span>
-                <span>0</span>
+                <span id="playerScore">0</span>
             </div>
             <div class="game-round">
                 <span>Round:</span>
-                <span>0</span>
+                <span id="currentRound">0</span>
             </div>
-            <div class="score-count">
+            <div class="score-count" >
                 <span>AI Score</span>
-                <span>0</span>
+                <span id="aiScore">0</span>
             </div>
         </div>
         <div class="play-area">
             <div class="player-container">
-                <img src="./imgs/scissor.png" class="player-img">
+                <img src="https://m.media-amazon.com/images/I/51tKIR7GWYL._AC_UF894,1000_QL80_.jpg" id="playerImg" class="player-img">
                 <span>Player</span>
             </div>
             <div class="game-controls">
                 <div class="player-controls">
-                    <button>Rock</button>
-                    <button>Paper</button>
-                    <button>Scissor</button>
+                    <button onclick="determineWinner('rock')">Rock</button>
+                    <button onclick="determineWinner('paper')">Paper</button>
+                    <button onclick="determineWinner('scissor')">Scissor</button>
                 </div>
 
-                <button class="reset-btn">Reset</button>
+                <button onclick="resetGame()" class="reset-btn">Reset</button>
 
             </div>
             <div class="player-container">
-                <img src="./imgs/rock.png" class="player-img">
+                <img src="https://drawiteazy.files.wordpress.com/2016/10/project-19-jpg.jpeg" id="aiImg" class="player-img">
                 <span>AI</span>
             </div>
-
         </div>
-    </div>
-    <span></span>
+        <span id="winner"></span>
 
+    </div>
+    
+<span></span>
 
 </body>
 
